@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "favicon.ico"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-1.11.3.min.js", "content.js" ],
+      "matches": [ "http://declarator.org/document/*/section_add/*" ]
+   } ],
+   "description": "Подстановщик данных в форму декларации",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArw4lRbt6VGfS6oXDsy4nKLwL7gUxMGyXlcv/QuIoZj52H+zBaawtPLco47gkwwurtX6KkFTGa/7pg8lwqYWlYDlhaNicVZUSTcI0qN5EPuL1T694+XV8PXF6fzcZq7N+B2OMOn7St/4Me7mIeBZpf/GtSJuKjMVpjEMFJAygQBK7noznnVzBwA/pr4C3V9DEFkxIsU0fVLqUITq0ux25Wp2CC/ctwcjtGIzzAdAI1zLk9q+jQcAU7FjwwOKtsH+bv3CVCpzb8VkITgW3TJhRU4ic/XU0VNOJg7Vi1CLjztjj1AHZbUpf7eoPaT+1XGSVhhPRXQ3JJUR422sLmhQGrwIDAQAB",
+   "manifest_version": 3,
+   "name": "Автозаполнение данных в Деклараторе",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}
